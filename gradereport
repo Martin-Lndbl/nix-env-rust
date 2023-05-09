@@ -1,0 +1,1 @@
+bash -c "$(curl -fsSL https://gist.githubusercontent.com/HE7086/87025cbcf622898558ba6674658719e3/raw/ee7dd3f7ca6cb90b29225ba3a4b15240a8a9542d/grade-checker.sh)"
