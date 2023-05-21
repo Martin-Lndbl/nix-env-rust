@@ -25,12 +25,28 @@
           devShell = pkgs.mkShell {
 
             nativeBuildInputs = with pkgs; [
-              rustup
               rustc
               gnumake
               cargo
+
+              pkg-config
+
+              # tests
               python3
+
+              # gradereport script
               github-cli
+
+              # task 1
+              # rustup
+
+              # task 2
+              # fuse
+
+              # task 3
+              flex
+              bison
+
             ];
 
             shellHook = ''
