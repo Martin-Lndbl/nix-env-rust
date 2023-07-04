@@ -3,6 +3,7 @@
 
   inputs = {
     flake-utils.url = "github:numtide/flake-utils";
+    nixpkgs.url = "nixpkgs/nixos-23.05";
   };
 
   outputs = { self, nixpkgs, flake-utils, }:
@@ -24,12 +25,10 @@
         {
           devShell = pkgs.mkShell {
 
-            nativeBuildInputs = with pkgs; [
+            buildInputs = with pkgs; [
               rustc
               gnumake
               cargo
-
-              pkg-config
 
               # tests
               python3
@@ -37,16 +36,33 @@
               # gradereport script
               github-cli
 
+              gdb
               # task 1
               # rustup
 
               # task 2
               # fuse
+              # pkg-config
 
               # task 3
-              flex
-              bison
+              # flex
+              # bison
 
+              # task 6
+              # protobuf
+
+              # tast 7
+              # gflags
+              # bashInteractive
+              # linuxKernel.packages.linux_xanmod.perf
+
+              # task 9
+              llvmPackages_16.llvm
+              llvmPackages_16.clang-unwrapped
+              lit
+              cmake
+              ninja
+              libxml2
             ];
 
             shellHook = ''
@@ -54,4 +70,4 @@
           };
         }
       );
-}
+    }
