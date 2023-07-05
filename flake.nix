@@ -58,7 +58,7 @@
 
               # task 9
               llvmPackages_16.llvm
-              llvmPackages_16.clang-unwrapped
+              clang_16
               lit
               cmake
               ninja
