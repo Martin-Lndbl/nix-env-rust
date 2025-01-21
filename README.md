@@ -7,5 +7,5 @@ The nix development environment for Rust
 You need to have [direnv](https://direnv.net/) installed and activated on your machine. 
 You can put following line in either your configuration.nix or homemanager file:
 ```
-	pkgs.direnv.enable = true;
+	programs.direnv.enable = true;
 ```
